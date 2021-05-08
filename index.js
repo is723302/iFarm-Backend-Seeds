@@ -2,7 +2,6 @@ const express = require('express');
 const app = express();
 const path = require('path');
 const { config } = require('./config');
-const cors = require('cors')
 const iFarmApi = require('./src/routes/index');
 const {
     logErrors,
@@ -16,9 +15,6 @@ app.use('/api/assets', express.static(path.join(__dirname, './public')));
 
 // body parser
 app.use(express.json());
-
-// CORS
-app.use(cors());
 
 // routes
 iFarmApi(app);

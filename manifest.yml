@@ -1,7 +1,0 @@
-applications:
-- name: iFarm-Backend-Seeds
-  buildpacks:
-    - sdk-for-nodejs
-  command: npm run start
-  random-route: true
-  memory: 128M
