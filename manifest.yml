@@ -1,5 +1,5 @@
 applications:
-- name: iFarmSeeds
+- name: iFarm-Backend-Seeds
   buildpacks:
     - sdk-for-nodejs
   command: npm run start
